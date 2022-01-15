@@ -24,7 +24,7 @@ public class StudentCoursesManger {
         }
     }
 
-    public List<Integer> getStudentCourseList(int studentId){
+    private List<Integer> getCourseListByStudentId(int studentId){
         if(studentCourseMap.containsKey(studentId))
             return studentCourseMap.get(studentId).getCourses();
         return null;
@@ -49,5 +49,9 @@ public class StudentCoursesManger {
 
     public List<CourseAvg> getAllCourseAvgList(){
         return new ArrayList(courseGradesMap.values());
+    }
+
+    public void printCoursesListByStudentId(int studentId){
+        System.out.println(String.format("StudentId: %s , Courses: %s", studentId, getCourseListByStudentId(studentId)));
     }
 }
