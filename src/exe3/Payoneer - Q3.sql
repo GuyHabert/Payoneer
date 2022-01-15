@@ -1,4 +1,3 @@
-
 /* --------1-------- */
 SELECT playrid, MAX(score)
 FROM (SELECT *
