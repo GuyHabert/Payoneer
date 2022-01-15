@@ -1,3 +1,5 @@
+package exe2;
+
 public class StudentCourseGrade {
     private int studentId;
     private int courseId;
