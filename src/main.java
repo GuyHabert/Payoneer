@@ -8,6 +8,9 @@ import java.util.List;
 
 public class main {
     public static void main(String[] args) {
+        // ------------ Q1 ------------
+        System.out.println("------------ Q1 ------------");
+
 
         // ------------ Q2 ------------
         List<StudentCourseGrade> items = new ArrayList<StudentCourseGrade>();
@@ -16,8 +19,10 @@ public class main {
         items.add(new StudentCourseGrade(2,1123,65));
 
         // Q2 - part 1
+        System.out.println("------------ Q2 - part 1 ------------");
         StudentCoursesManger manger = new StudentCoursesManger();
         manger.buildStudentCoursesMap(items);
+        // get courses per student
         System.out.println(manger.getStudentCourseList(1));
         System.out.println(manger.getStudentCourseList(2));
 
@@ -25,7 +30,7 @@ public class main {
         for (StudentCourse currStudentCourse: allStudentCourse) {
             System.out.println(String.format("StudentId: %s , Courses: %s", currStudentCourse.getStudentId(), currStudentCourse.getCourses().toString()));
         }
-
+        System.out.println("------------ Q2 - part 2 ------------");
         // Q2 - part 2
         manger.buildCourseGradesMap(items);
         List<CourseAvg> allCourseAvg = manger.getAllCourseAvgList();
