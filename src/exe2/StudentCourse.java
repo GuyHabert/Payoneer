@@ -15,10 +15,6 @@ public class StudentCourse {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
-
     public List<Integer> getCourses() {
         return courses;
     }
@@ -26,8 +22,6 @@ public class StudentCourse {
     public void addCourse(int course){
         this.courses.add(course);
     }
-
-
 }
 
 

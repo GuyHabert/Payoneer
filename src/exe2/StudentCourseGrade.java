@@ -11,18 +11,6 @@ public class StudentCourseGrade {
         this.grade = grade;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
-
-    public void setCourseId(int courseId) {
-        this.courseId = courseId;
-    }
-
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
-
     public int getStudentId() {
         return studentId;
     }
